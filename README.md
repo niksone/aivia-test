@@ -1,1 +1,2 @@
-Base Setup for Vue 3 with Typescript, Eslint, Stylelint, Prettier, Husky
+Test Project for Aivia
+Nikita Krekoten
