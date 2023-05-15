@@ -28,6 +28,9 @@
 import { reactive, computed } from 'vue'
 import { required, email, minLength } from '@vuelidate/validators'
 import { useVuelidate } from '@vuelidate/core'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const form = reactive({
   email: '',
@@ -51,5 +54,6 @@ const passwordError = computed(
 const submitForm = () => {
   v$.value.$validate()
   if (v$.value.$error) return
+  router.push({ name: 'game' })
 }
 </script>
