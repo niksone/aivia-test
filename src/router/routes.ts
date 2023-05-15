@@ -4,4 +4,9 @@ export const routes = [
     name: 'login',
     path: '/login',
   },
+  {
+    component: () => import('@/views/Game/GamePage.vue'),
+    name: 'game',
+    path: '/game',
+  },
 ]
